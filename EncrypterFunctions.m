@@ -2,25 +2,21 @@ clc
 clear
 close
 
-% [file, path] = uigetfile('*.wav');
+[file, path] = uigetfile('*.wav');
 % [file, path] = uigetfile("/Users/qayyuma/Downloads/Rips/Grover Washington Jr/Winelight/06 Make Me A Memory copy.wav");
 
-directory = ('/Users/qayyuma/Downloads/Encrypted Songs/');
-files = dir(fullfile(directory, '*.wav'));
-path = directory;
+% directory = ('/Users/qayyuma/Downloads/Encrypted Songs/');
+% files = dir(fullfile(directory, '*.wav'));
+% path = directory;
 
 
-for i = 1:length(files)
-file = fullfile(files(i).name);
+% for i = 1:length(files)
+% file = fullfile(files(i).name);
 
 filename = append(path,file);
 [y,Fs] = audioread(filename);
 
-if length(y) > 16000000
-    music = y(1:16000000,1);
-else 
-    music = y(:,1);
-end
+music = y(:,1);
 numIntervals = 100;
 
 musicSplit = musicSplitter(music, numIntervals);
@@ -33,15 +29,15 @@ save(fileWrite,"intervalKey","musicEncrypted","numIntervals","Fs");
 disp(append("Finished saving ", fileGeneric));
 
 
-if i ~= 0  
-    intervalKey = 0;
-    music = 0;
-    musicEncrypted = 0;
-    musicSplit = 0;
-    numIntervals = 0;
-end
+% if i ~= 0  
+%     intervalKey = 0;
+%     music = 0;
+%     musicEncrypted = 0;
+%     musicSplit = 0;
+%     numIntervals = 0;
+% end
 
-end
+% end
 
 % sound(y(1:2205000),Fs);
 
