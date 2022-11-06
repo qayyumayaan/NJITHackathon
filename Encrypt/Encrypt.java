@@ -1,4 +1,4 @@
-public class Encrypt {
+public class Encrypt { 
 
     public static double[][] musicSplitter(double[] music, int numIntervals) {
         int samples = music.length;
