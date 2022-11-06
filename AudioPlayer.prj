@@ -1,0 +1,62 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="2771522426" file="/Users/qayyuma/Documents/GitHub/NJITHackathon/AudioPlayer.prj" location="/Users/qayyuma/Documents/GitHub/NJITHackathon" name="AudioPlayer" target="target.mlapps" target-name="Package App">
+    <param.appname>AudioPlayer</param.appname>
+    <param.authnamewatermark>Ayaan Qayyum</param.authnamewatermark>
+    <param.email />
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary>Companion app to be used with the smoresapp.tech project.</param.summary>
+    <param.description />
+    <param.screenshot>/private/var/folders/0y/429g4d5d32zb2pqs4xmylpfc0000gn/T/tpafe183d3_52ca_4f82_90f5_20077fe2c0dd.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>726dd4e9-8b31-429f-bc1b-464260838234</param.guid>
+    <unset>
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.description />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/AudioDecryptor.mlapp</file>
+    </fileset.main>
+    <fileset.depfun />
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="/Users/qayyuma/Documents/GitHub" name="NJITHackathon" optional="false">/Users/qayyuma/Documents/GitHub/NJITHackathon</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2022b.app</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>13.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
